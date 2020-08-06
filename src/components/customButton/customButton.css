@@ -1,0 +1,57 @@
+:root {
+  --primary: #4628ff;
+  --blue: #01043b;
+  --aqua: #423894;
+  --default: #0056ff;
+  --active: #00ffee;
+  --hover: #d6d6d6;
+  --white: #ffffff;
+}
+
+.btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
+
+.btn--primary {
+  background: var(--aqua);
+  color: var(--white);
+  border: 1px solid var(--aqua);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.btn--medium {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 200px;
+}
+
+.btn--primary:active {
+  background: var(--active);
+  color: var(--aqua);
+}
+
+.btn--small {
+  height: 30px;
+  font-size: 11px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 3px;
+  color: black;
+  width: 100px;
+}
+
+.unavailable {
+  background: var(--hover);
+  color: var(--white);
+  cursor: default;
+  pointer-events: none;
+}

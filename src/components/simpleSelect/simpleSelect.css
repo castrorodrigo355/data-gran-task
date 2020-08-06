@@ -1,0 +1,102 @@
+.select--simple--container {
+  width: 260px;
+  position: relative;
+}
+
+.select--simple--container.disabled--select {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.select--simple--container--title {
+  color: #b6b4d9;
+  font-size: 20px;
+  font-family: "Roboto";
+  margin-bottom: 2px;
+  padding-left: 10px;
+}
+
+.select--simple--container--button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 39px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 3px #0000000d;
+  border: 1px solid #d7dae2;
+  outline: none;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.select--simple--container--button--description {
+  color: #4d4f5c;
+  font-size: 17px;
+  font-family: "Roboto";
+  padding-left: 5px;
+}
+
+.select--simple--container--options {
+  position: absolute;
+  color: #423994;
+  top: 63px;
+  left: 1px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #423994;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 500;
+  display: none;
+  width: calc(100% - 15px);
+}
+
+.select--simple--container--options.open--ssc--options {
+  display: block;
+}
+
+.select--simple--container--options--item {
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 35px;
+  color: #a4a7be;
+  outline: none;
+  text-align: start;
+  z-index: 3000;
+  border-bottom-color: #a4a7be;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+.select--simple--container--button--arrow--icon {
+  cursor: pointer;
+}
+
+.select--simple--container--options--item:hover {
+  color: #423994;
+}
+
+.arrow-invert {
+  transform: rotate(180deg);
+}
+
+.select--simple--container--clean--icon {
+  position: absolute;
+  top: 25px;
+  right: -5px;
+  cursor: pointer;
+  display: none;
+}
+
+.select--simple--container--clean--icon.show-clean {
+  display: block;
+}
